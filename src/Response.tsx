@@ -5,7 +5,12 @@ function Response() {
   const [clicked, setClicked] = useState(false)
 
   if (clicked) {
-    return <Judge />
+    return (
+      <div>
+        <Judge />
+        <button onClick={() => setClicked(false)}>もう一度聞く</button>
+      </div>
+    )
   } else {
     return (
       <div>
