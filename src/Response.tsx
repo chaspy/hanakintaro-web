@@ -1,20 +1,25 @@
 import React, { useState } from 'react'
 import Judge from './Judge'
+import Button from './Button'
 
 function Response() {
   const [clicked, setClicked] = useState(false)
+
+  const handleClick = () => {
+    setClicked(!clicked)
+  }
 
   if (clicked) {
     return (
       <div>
         <Judge />
-        <button onClick={() => setClicked(false)}>もう一度聞く</button>
+        <Button text="もう一度聞く" handleClick={handleClick}></Button>
       </div>
     )
   } else {
     return (
       <div>
-        <button onClick={() => setClicked(true)}>今日花金？</button>
+        <Button text="今日花金？" handleClick={handleClick}></Button>
       </div>
     )
   }
