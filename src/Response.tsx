@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
+//import Judge from './Judge'
 
 function Response() {
   const [clicked, setClicked] = useState(false)
 
   if (clicked) {
-    return <p>今日は花金！</p>
+    return <div></div>
   } else {
     return (
       <div>
