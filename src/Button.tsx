@@ -1,3 +1,5 @@
+import './Button.css'
+
 type ButtonProps = {
   text: string
   handleClick: (event: React.MouseEvent<HTMLButtonElement>) => void
