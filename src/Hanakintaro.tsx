@@ -4,7 +4,7 @@ import './Hanakintaro.css'
 
 function Hanakintaro() {
   return (
-    <div>
+    <div className="hanakintaro">
       <img src={logo} alt="hanakintaro logo"></img>
       <Response />
     </div>
