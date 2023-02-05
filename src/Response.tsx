@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-//import Judge from './Judge'
+import Judge from './Judge'
 
 function Response() {
   const [clicked, setClicked] = useState(false)
 
   if (clicked) {
-    return <div></div>
+    return <Judge />
   } else {
     return (
       <div>
