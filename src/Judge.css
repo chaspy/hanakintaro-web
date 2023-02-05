@@ -1,8 +1,8 @@
 .answer {
   position: relative;
   display: inline-block;
-  margin: 1.5em 0 1.5em 15px;
-  padding: 7px 10px;
+  margin: 20px;
+  padding: 20px;
   min-width: 120px;
   max-width: 100%;
   color: #555;

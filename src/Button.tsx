@@ -6,7 +6,11 @@ type ButtonProps = {
 }
 
 function Button(props: ButtonProps) {
-  return <button onClick={props.handleClick}>{props.text}</button>
+  return (
+    <button className={props.text} onClick={props.handleClick}>
+      {props.text}
+    </button>
+  )
 }
 
 export default Button
