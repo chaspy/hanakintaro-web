@@ -12,7 +12,6 @@ function Hanakintaro() {
     <div>
       <img src={logo} alt="hanakintaro logo"></img>
       <Response />
-      <button onClick={handleClick}>今日花金？</button>
     </div>
   )
 }
