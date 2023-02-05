@@ -1,3 +1,5 @@
+import './Judge.css'
+
 function Judge() {
   interface hanakinResponse {
     [key: string]: string
@@ -19,7 +21,11 @@ function Judge() {
   }
   const answer = response[dayOfWeekStr]
 
-  return <p>{answer}</p>
+  return (
+    <div className="answer">
+      <p>{answer}</p>
+    </div>
+  )
 }
 
 export default Judge
