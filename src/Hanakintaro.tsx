@@ -3,11 +3,16 @@ import Response from './Response'
 import './Hanakintaro.css'
 
 function Hanakintaro() {
+  function handleClick(e: any) {
+    e.preventDefault()
+    console.log('clicked')
+  }
+
   return (
     <div>
       <img src={logo} alt="hanakintaro logo"></img>
       <Response />
-      <button>今日花金？</button>
+      <button onClick={handleClick}>今日花金？</button>
     </div>
   )
 }
